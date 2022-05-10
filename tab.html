@@ -11,11 +11,9 @@
     <title>Tabb</title>
   </head>
   <body>
-    <div style="display: flex; justify-content: center; margin-bottom: 2px; padding: 0px; background-color: #FFEEDF; margin-bottom: 0px;">
-      <img src="https://www.viyamo.com/Uploads/EditorUploads/viyamo.png" alt="">
-    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 2px; padding: 0px; background-color: #FFEEDF; margin-bottom: 0px;"><a href="https://www.viyamo.com/blog"><img src="https://www.viyamo.com/Uploads/EditorUploads/viyamo.png" alt=""></a></div>
     <style>
-      p {
+    p {
         display: block;
         margin-block-start: 1em;
         margin-block-end: 1em;
@@ -25,441 +23,258 @@
         margin-bottom: 1rem;
         line-height: 2;
         font-weight: 500;
-      }
-
-      .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: .25rem;
-      }
-
-      .card>hr {
-        margin-right: 0;
-        margin-left: 0
-      }
-
-      .card>.list-group {
-        border-top: inherit;
-        border-bottom: inherit
-      }
-
-      .card>.list-group:first-child {
-        border-top-width: 0;
-        border-top-left-radius: calc(.25rem - 1px);
-        border-top-right-radius: calc(.25rem - 1px)
-      }
-
-      .card>.list-group:last-child {
-        border-bottom-width: 0;
-        border-bottom-right-radius: calc(.25rem - 1px);
-        border-bottom-left-radius: calc(.25rem - 1px)
-      }
-
-      .card>.card-header+.list-group,
-      .card>.list-group+.card-footer {
-        border-top: 0
-      }
-
-      .card-body {
-        flex: 1 1 auto;
-        padding: 1rem 1rem
-      }
-
-      .card-title {
-        margin-bottom: .5rem;
-        font-weight: bold;
-        font-size: 1.25rem;
-      }
-
-      .card-subtitle {
-        margin-top: -.25rem;
-        margin-bottom: 0
-      }
-
-      .card-text:last-child {
-        margin-bottom: 0
-      }
-
-      .card-link+.card-link {
-        margin-left: 1rem
-      }
-
-      .card-header {
-        padding: .5rem 1rem;
-        margin-bottom: 0;
-        background-color: rgba(0, 0, 0, .03);
-        border-bottom: 1px solid rgba(0, 0, 0, .125)
-      }
-
-      .card-header:first-child {
-        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
-      }
-
-      .card-footer {
-        padding: .5rem 1rem;
-        background-color: rgba(0, 0, 0, .03);
-        border-top: 1px solid rgba(0, 0, 0, .125)
-      }
-
-      .card-footer:last-child {
-        border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
-      }
-
-      .card-header-tabs {
-        margin-right: -.5rem;
-        margin-bottom: -.5rem;
-        margin-left: -.5rem;
-        border-bottom: 0
-      }
-
-      .card-header-pills {
-        margin-right: -.5rem;
-        margin-left: -.5rem
-      }
-
-      .card-img-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        border-radius: calc(.25rem - 1px)
-      }
-
-      .card-img,
-      .card-img-bottom,
-      .card-img-top {
-        width: 100%
-      }
-
-      .card-img,
-      .card-img-top {
-        border-top-left-radius: calc(.25rem - 1px);
-        border-top-right-radius: calc(.25rem - 1px)
-      }
-
-      .card-img,
-      .card-img-bottom {
-        border-bottom-right-radius: calc(.25rem - 1px);
-        border-bottom-left-radius: calc(.25rem - 1px)
-      }
-
-      .card-group>.card {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: .75rem
-      }
-
-      @media (min-width:576px) {
-        .card-group {
-          display: flex;
-          padding-left: 20%;
-          padding-right: 20%;
-        }
-
-        .card-group>.card {
-          flex: 1 0 0%;
-          margin-bottom: 0
-        }
-
-        .card-group>.card+.card {
-          margin-left: 0;
-          border-left: 0
-        }
-
-        .card-group>.card:not(:last-child) {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0
-        }
-
-        .card-group>.card:not(:last-child) .card-header,
-        .card-group>.card:not(:last-child) .card-img-top {
-          border-top-right-radius: 0
-        }
-
-        .card-group>.card:not(:last-child) .card-footer,
-        .card-group>.card:not(:last-child) .card-img-bottom {
-          border-bottom-right-radius: 0
-        }
-
-        .card-group>.card:not(:first-child) {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0
-        }
-
-        .card-group>.card:not(:first-child) .card-header,
-        .card-group>.card:not(:first-child) .card-img-top {
-          border-top-left-radius: 0
-        }
-
-        .card-group>.card:not(:first-child) .card-footer,
-        .card-group>.card:not(:first-child) .card-img-bottom {
-          border-bottom-left-radius: 0
-        }
-
-        /**/
-
-        main#carousel {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  --items: 5;
-  --middle: 3;
-  --position: 1;
-  pointer-events: none;
-}
-
-div.item {
-  position: absolute;
-  width: 300px;
-  height: 400px;
-
-  --r: calc(var(--position) - var(--offset));
-  --abs: max(calc(var(--r) * -1), var(--r));
-  transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
-}
-
-div.item:nth-of-type(1) {
-  --offset: 1;
-
-}
-div.item:nth-of-type(2) {
-  --offset: 2;
-
-}
-div.item:nth-of-type(3) {
-  --offset: 3;
-
-}
-div.item:nth-of-type(4) {
-  --offset: 4;
-
-}
-div.item:nth-of-type(5) {
-  --offset: 5;
-
-}
-
-input:nth-of-type(1) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel {
-  --position: 1;
-}
-
-input:nth-of-type(2) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel {
-  --position: 2;
-}
-
-input:nth-of-type(3) {
-  grid-column: 4 /5;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel {
-  --position: 3;
-}
-
-input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel {
-  --position: 4;
-}
-
-input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel {
-  --position: 5;
-}
-
-      }
-    </style>
-    <div class="card-group" style="margin-top: 0px; padding-bottom: 25px; background-color: #FFEEDF; width: 100%; float: left;">
-      <div class="card" style="margin-right: 30px;">
-        <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-          <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-          <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-            <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-          </p>
-          <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
+    }
+          .card {
+            
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+    
+          }
+       
+          .card>hr {
+            margin-right: 0;
+            margin-left: 0
+          }
+       
+          .card>.list-group {
+            border-top: inherit;
+            border-bottom: inherit
+          }
+       
+          .card>.list-group:first-child {
+            border-top-width: 0;
+            border-top-left-radius: calc(.25rem - 1px);
+            border-top-right-radius: calc(.25rem - 1px)
+          }
+       
+          .card>.list-group:last-child {
+            border-bottom-width: 0;
+            border-bottom-right-radius: calc(.25rem - 1px);
+            border-bottom-left-radius: calc(.25rem - 1px)
+          }
+       
+          .card>.card-header+.list-group,
+          .card>.list-group+.card-footer {
+            border-top: 0
+          }
+       
+          .card-body {
+            flex: 1 1 auto;
+            padding: 1rem 1rem
+          }
+       
+          .card-title {
+            margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+          }
+       
+          .card-subtitle {
+            margin-top: -.25rem;
+            margin-bottom: 0
+          }
+       
+          .card-text:last-child {
+            margin-bottom: 0
+          }
+       
+          .card-link+.card-link {
+            margin-left: 1rem
+          }
+       
+          .card-header {
+            padding: .5rem 1rem;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, .03);
+            border-bottom: 1px solid rgba(0, 0, 0, .125)
+          }
+       
+          .card-header:first-child {
+            border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+          }
+       
+          .card-footer {
+            padding: .5rem 1rem;
+            background-color: rgba(0, 0, 0, .03);
+            border-top: 1px solid rgba(0, 0, 0, .125)
+          }
+       
+          .card-footer:last-child {
+            border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+          }
+       
+          .card-header-tabs {
+            margin-right: -.5rem;
+            margin-bottom: -.5rem;
+            margin-left: -.5rem;
+            border-bottom: 0
+          }
+       
+          .card-header-pills {
+            margin-right: -.5rem;
+            margin-left: -.5rem
+          }
+       
+          .card-img-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            border-radius: calc(.25rem - 1px)
+          }
+       
+          .card-img,
+          .card-img-bottom,
+          .card-img-top {
+            width: 100%
+          }
+       
+          .card-img,
+          .card-img-top {
+            border-top-left-radius: calc(.25rem - 1px);
+            border-top-right-radius: calc(.25rem - 1px)
+          }
+       
+          .card-img,
+          .card-img-bottom {
+            border-bottom-right-radius: calc(.25rem - 1px);
+            border-bottom-left-radius: calc(.25rem - 1px)
+          }
+       
+          .card-group>.card {
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: .75rem
+          }
+       
+          @media (min-width:576px) {
+            .card-group {
+              display: flex;
+              padding-left: 20%;
+              padding-right: 20%;
+    
+            }
+       
+            .card-group>.card {
+              flex: 1 0 0%;
+              margin-bottom: 0
+            }
+       
+            .card-group>.card+.card {
+              margin-left: 0;
+              border-left: 0
+            }
+       
+            .card-group>.card:not(:last-child) {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0
+            }
+       
+            .card-group>.card:not(:last-child) .card-header,
+            .card-group>.card:not(:last-child) .card-img-top {
+              border-top-right-radius: 0
+            }
+       
+            .card-group>.card:not(:last-child) .card-footer,
+            .card-group>.card:not(:last-child) .card-img-bottom {
+              border-bottom-right-radius: 0
+            }
+       
+            .card-group>.card:not(:first-child) {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0
+            }
+       
+            .card-group>.card:not(:first-child) .card-header,
+            .card-group>.card:not(:first-child) .card-img-top {
+              border-top-left-radius: 0
+            }
+       
+            .card-group>.card:not(:first-child) .card-footer,
+            .card-group>.card:not(:first-child) .card-img-bottom {
+              border-bottom-left-radius: 0
+            }
+          }
+        </style>
+       <div class="card-group" style="margin-top: 0px; padding-bottom: 25px; background-color: #FFEEDF; width: 100%; float: left;">
+        <div class="card" style="margin-right: 30px;">
+          <a href="https://www.viyamo.com/blog/icerik/leopar-desenli-elbise-nasil-kombinlenir"><img src="https://www.viyamo.com/Uploads/Blog/Eskimeyen-Moda-Leopar-Desenli-Elbise-Nas-7d78.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Eskimeyen Moda Leopar Desenli Elbise Nasıl Kombinlenir?</h5>
+            <p class="card-text">Leopar desenli elbise nasıl kombinlenir? Leopar desenli kıyafetler nasıl giyilir?<span id="dots4">...</span>
+              <span id="more4" style="display: none;">Leopar desenli tayt, etek, gömlek ve pantolon seçiminde nelere dikkat edilir? Ve çok daha fazlası yazımızda.</span>
+            </p>
+            <p onclick="myFunction(4)" id="myBtn4">Daha Fazlası...</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Mayıs 07, 2022</small>
+          </div>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Nisan 24, 2022</small>
+          <div class="card" style="margin-right: 30px;">
+            <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri"><img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
+              <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
+                <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
+              </p>
+              <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Nisan 24, 2022</small>
+            </div>
+          </div>
+          <div class="card" style="margin-right: 30px;">
+            <a href="https://www.viyamo.com/blog/icerik/nisanda-sozde-ne-giyilir-nisan-elbisesi-tavsiyesi"><img src="https://www.viyamo.com/Uploads/Blog/Nisanda-Sozde-Ne-Giyilir-Nisan-Elbisesi--37c0.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Nişanda Sözde Ne Giyilir? Nişan Elbisesi Tavsiyesi</h5>
+              <p class="card-text">Nişan elbisesi modelleri nelerdir? Nişan elbisesi nasıl seçilir? Evde nişan kıyafetleri seçiminde <span id="dots2">...</span>
+                <span id="more2" style="display: none;">nelere dikkat edilmelidir? Nişan ve söz kıyafetlerine dair merek ettiğiniz konuları sizler için ele aldık. Keyifli okumalar.</span>
+              </p>
+              <p onclick="myFunction(2)" id="myBtn2">Daha Fazlası...</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Nisan 04, 2022</small>
+            </div>
+          </div>
+          <div class="card" style="margin-right: 30px;">
+            <a href="https://www.viyamo.com/blog/icerik/kadin-blazer-ceket-nasil-kombinlenir"><img src="https://www.viyamo.com/Uploads/Blog/Kadin-Blazer-Ceket-Nasil-Kombinlenir-6e41.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Kadın Blazer Ceket Nasıl Kombinlenir?</h5>
+              <p class="card-text">Kadın blazer ceket nasıl kombinlenir? Bayan blazer ceket kombinlernirken nelere dikkat edilmelidir? <span id="dots3">...</span>
+                <span id="more3" style="display: none !important;">Blazer ceket nasıl kullanılır? Blazer ceket kombinine dair merak ettiğiniz diğer konular için yazımızı inceleyebilirsiniz.</span>
+              </p>
+              <p onclick="myFunction(3)" id="myBtn3">Daha Fazlası...</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Mart 11, 2022</small>
+            </div>
+          </div>
+          
         </div>
-      </div>
-      <div class="card" style="margin-right: 30px;">
-        <a href="https://www.viyamo.com/blog/icerik/nisanda-sozde-ne-giyilir-nisan-elbisesi-tavsiyesi">
-          <img src="https://www.viyamo.com/Uploads/Blog/Nisanda-Sozde-Ne-Giyilir-Nisan-Elbisesi--37c0.jpg" class="card-img-top" alt="...">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">Nişanda Sözde Ne Giyilir? Nişan Elbisesi Tavsiyesi</h5>
-          <p class="card-text">Nişan elbisesi modelleri nelerdir? Nişan elbisesi nasıl seçilir? Evde nişan kıyafetleri seçiminde <span id="dots2">...</span>
-            <span id="more2" style="display: none;">nelere dikkat edilmelidir? Nişan ve söz kıyafetlerine dair merek ettiğiniz konuları sizler için ele aldık. Keyifli okumalar.</span>
-          </p>
-          <p onclick="myFunction(2)" id="myBtn2">Daha Fazlası...</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Nisan 04, 2022</small>
-        </div>
-      </div>
-      <div class="card" style="margin-right: 30px;">
-        <a href="https://www.viyamo.com/blog/icerik/kadin-blazer-ceket-nasil-kombinlenir">
-          <img src="https://www.viyamo.com/Uploads/Blog/Kadin-Blazer-Ceket-Nasil-Kombinlenir-6e41.jpg" class="card-img-top" alt="...">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">Kadın Blazer Ceket Nasıl Kombinlenir?</h5>
-          <p class="card-text">Kadın blazer ceket nasıl kombinlenir? Bayan blazer ceket kombinlernirken nelere dikkat edilmelidir? <span id="dots3">...</span>
-            <span id="more3" style="display: none !important;">Blazer ceket nasıl kullanılır? Blazer ceket kombinine dair merak ettiğiniz diğer konular için yazımızı inceleyebilirsiniz.</span>
-          </p>
-          <p onclick="myFunction(3)" id="myBtn3">Daha Fazlası...</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Mart 11, 2022</small>
-        </div>
-      </div>
-      <div class="card">
-        <a href="https://www.viyamo.com/blog/icerik/en-tarz-kadin-kombin-onerileri">
-          <img src="https://www.viyamo.com//Uploads/Blog/En-Tarz-Kadin-Kombin-Onerileri-3578.jpg" class="card-img-top" alt="...">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">En Tarz Kadın Kombin Önerileri</h5>
-          <p class="card-text">En tarz ve moda kadın kombin önerileri nelerdir? Kombin yapılırken dikkat edilmesi gerekenler <span id="dots4">...</span>
-            <span id="more4" style="display: none;">ve çok daha fazlasını yazımızda sizler için kaleme aldık.</span>
-          </p>
-          <p onclick="myFunction(4)" id="myBtn4">Daha Fazlası...</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Mart 06, 2022</small>
-        </div>
-      </div>
-    </div>
-    <script>
-      function myFunction(x) {
-        var dots = document.getElementById("dots" + x);
-        var moreText = document.getElementById("more" + x);
-        var btnText = document.getElementById("myBtn" + x);
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Daha Fazlası...";
-          moreText.style.display = "none";
-        } else {
-          moreText.style.display = "inline";
-          dots.style.display = "none";
-          btnText.innerHTML = "Daha az...";
-        }
-      }
-    </script>
-
-<input type="radio" name="position" />
-<input type="radio" name="position" />
-<input type="radio" name="position"checked />
-<input type="radio" name="position" />
-<input type="radio" name="position" />
-<main id="carousel">
-  <div class="item"><div class="card" style="margin-right: 30px;">
-        <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-          <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-          <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-            <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-          </p>
-          <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Nisan 24, 2022</small>
-        </div>
-      </div></div>
-  <div class="item"><div class="card" style="margin-right: 30px;">
-    <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-      <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-      <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-        <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-      </p>
-      <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Nisan 24, 2022</small>
-    </div>
-  </div></div>
-  <div class="item"><div class="card" style="margin-right: 30px;">
-    <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-      <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-      <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-        <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-      </p>
-      <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Nisan 24, 2022</small>
-    </div>
-  </div></div>
-  <div class="item"><div class="card" style="margin-right: 30px;">
-    <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-      <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-      <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-        <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-      </p>
-      <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Nisan 24, 2022</small>
-    </div>
-  </div></div>
-  <div class="item"><div class="card" style="margin-right: 30px;">
-    <a href="https://www.viyamo.com/blog/icerik/vucut-tipine-gore-pantolon-secimi-tavsiyeleri">
-      <img src="https://www.viyamo.com/Uploads/Blog/Vucut-Tipine-Gore-Pantolon-Secimi-Tavsiy-f3cf.jpg" class="card-img-top" alt="...">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Vücut Tipine Göre Pantolon Seçimi Tavsiyeleri</h5>
-      <p class="card-text">Vücut tipine göre pantolon seçimi nasıl yapılır? Vücut tipi nasıl <span id="dots1">...</span>
-        <span id="more1" style="display: none;">belirlenir? Vücut tipine göre pantolon seçiminedair merak ettiğiniz her şeyi sizler için ele aldık. Keyifli okumalar.</span>
-      </p>
-      <p onclick="myFunction(1)" id="myBtn1">Daha Fazlası...</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Nisan 24, 2022</small>
-    </div>
-  </div></div>
-  <main>
-    </div>
+        <script>
+          function myFunction(x) {
+            var dots = document.getElementById("dots" + x);
+            var moreText = document.getElementById("more" + x);
+            var btnText = document.getElementById("myBtn" + x);
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Daha Fazlası...";
+              moreText.style.display = "none";
+            } else {
+              moreText.style.display = "inline";
+              dots.style.display = "none";
+              btnText.innerHTML = "Daha az...";
+            }
+          }
+        </script>
   </body>
 </html>
